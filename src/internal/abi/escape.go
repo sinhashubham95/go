@@ -18,7 +18,7 @@ import "unsafe"
 //go:nocheckptr
 func NoEscape(p unsafe.Pointer) unsafe.Pointer {
 	x := uintptr(p)
-	return unsafe.Pointer(x ^ 0)
+	return unsafe.Pointer(x)
 }
 
 var alwaysFalse bool
